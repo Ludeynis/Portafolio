@@ -401,8 +401,7 @@ footer{
     margin: 0 auto;
 }
 
-        /* --- ESTILOS RESPONSIVE --- */
-        /* Esto es lo que faltaba */
+        /*  ESTILOS RESPONSIVE  */
         
         @media (max-width: 768px) {
             #navbar {
@@ -412,7 +411,6 @@ footer{
             }
             
             .nav-links {
-                 /* Se colapsará en un menú hamburguesa en un siguiente paso, por ahora centrado */
                  justify-content: center;
                  width: 100%;
                  gap: 1.5rem;
@@ -424,7 +422,7 @@ footer{
 
             .hero {
                 min-height: auto;
-                padding-top: 8rem; /* Más espacio por el header estático */
+                padding-top: 8rem;
                 text-align: center;
             }
 
@@ -464,7 +462,7 @@ footer{
             }
 
             .timeline-item:before {
-                left: 1px; /* Ajustado para (10px - 9px) */
+                left: 1px;
             }
             
             .footer-content {
@@ -483,7 +481,7 @@ footer{
              .hero-text h1 {
                 font-size: 2rem;
              }
-        }
+    }
 
 
 /* ESTILOS PARA EL FORMULARIO*/
