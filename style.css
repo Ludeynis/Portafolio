@@ -144,11 +144,17 @@ section{
     box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
 }
 
-.hero-buttons{
+.hero-buttons {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 0.8rem;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.hero-buttons .btn {
+    white-space: nowrap;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
 }
 
 .btn-outline{
@@ -424,6 +430,9 @@ footer{
         /*  ESTILOS RESPONSIVE  */
         
         @media (max-width: 768px) {
+            header {
+                position: sticky;
+            }
             #navbar {
                 flex-direction: column;
                 padding: 1rem;
@@ -442,7 +451,7 @@ footer{
 
             .hero {
                 min-height: auto;
-                padding-top: 8rem;
+                padding-top: 2rem;
                 text-align: center;
             }
 
@@ -470,6 +479,11 @@ footer{
             .hero-image img {
                 width: 280px;
                 height: 280px;
+            }
+
+            .hero-buttons{
+                justify-content: center;
+                flex-wrap: wrap;
             }
 
             .timeline:before {
@@ -576,4 +590,55 @@ footer{
     display: block;
     text-align: center;
     margin-top: 1.5rem;
+}
+
+/* Language Toggle */
+.language-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.lang-btn {
+    background: linear-gradient(135deg, #6c63ff, #4c3aff);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.lang-btn:hover {
+    transform: scale(1.05);
+}
+
+.lang-btn .lang-en {
+    opacity: 0.5;
+    margin-left: 0.5rem;
+}
+
+.lang-btn.en .lang-es {
+    opacity: 0.5;
+}
+
+.lang-btn.en .lang-en {
+    opacity: 1;
+}
+
+/* Translations */
+.es-only {
+    display: block;
+}
+
+.en-only {
+    display: none;
+}
+
+body.en .es-only {
+    display: none;
+}
+
+body.en .en-only {
+    display: block;
 }

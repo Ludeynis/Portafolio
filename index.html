@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portafolio de proyectos</title>
+    <title>Portafolio de proyectos</title>
+
+    <meta name="description" content="Portafolio de Ludeynis Gámez, desarrolladora web junior especializada en JavaScript, HTML5 y CSS3. Descubre mis proyectos y experiencia.">
+    <link rel="icon" type="image/png" href="imagenes/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="imagenes/favicon/apple-touch-icon.png">
+
+
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d448b8bc70.js" crossorigin="anonymous"></script>
 </head>
@@ -12,13 +18,22 @@
 <body>
     <header>
         <nav id="navbar">
-            <div class="logo">Ludeynis <span>Gámez</span></div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-            </ul>
-        </nav>
+    <div class="logo">Ludeynis <span>Gámez</span></div>
+    <ul class="nav-links">
+        <li><a href="#inicio" class="es-only">Inicio</a></li>
+        <li><a href="#inicio" class="en-only">Home</a></li>
+        <li><a href="#experiencia" class="es-only">Experiencia</a></li>
+        <li><a href="#experiencia" class="en-only">Experience</a></li>
+        <li><a href="#proyectos" class="es-only">Proyectos</a></li>
+        <li><a href="#proyectos" class="en-only">Projects</a></li>
+    </ul>
+    <div class="language-toggle">
+        <button id="langBtn" class="lang-btn">
+            <span class="lang-es">ES</span>
+            <span class="lang-en">EN</span>
+        </button>
+    </div>
+</nav>
     </header>
 
     <main>
@@ -26,22 +41,31 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Ludeynis Gamez</h1>
-                    <h2>Desarrolladora Web Junior</h2>
-                    <p>Apasionada por crear experiencias web unicas y funcionales. Siempre buscando aprender nuevas
-                        tecnologias.</p>
+                    <h2 class="es-only">Desarrolladora Web Junior</h2>
+                    <h2 class="en-only">Junior Web Developer</h2>
+                    <p class="es-only">Apasionada por crear experiencias web unicas y funcionales. Siempre buscando
+                        aprender nuevas tecnologias</p>
+                    <p class="en-only">Passionate about creating unique and functional web experiences. Always looking
+                        to learn new technologies.</p>
                     <div class="social-links">
-                        <a href="https://github.com/Ludeynis" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.instagram.com/ludeynis1/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/ludeynis-gamez-50b368361/" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Ludeynis" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/ludeynis1/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ludeynis-gamez-50b368361/" target="_blank" aria-label="Linkedin">
+                            <i class="fab fa-linkedin"></i></a>
                     </div>
 
                     <div class="hero-buttons">
-                        <a href="mailto:ludeynis@gmail.com" class="btn">Escríbeme un correo</a>
+                        <a href="mailto:ludeynis@gmail.com" class="btn es-only">Escríbeme un correo</a>
+                        <a href="mailto:ludeynis@gmail.com" class="btn en-only">Email Me</a>
+
                         <a href="https://wa.me/34644236052?text=Hola%20Ludeynis%2C%20vi%20tu%20portafolio"
                             target="_blank" class="btn btn-outline">WhatsApp</a>
-                        <a href="Ludeynis_CV_Desarrolladora.pdf" download class="btn btn-outline">Descargar CV</a>
+
+                        <a href="Ludeynis_CV_Desarrolladora.pdf" download class="btn btn-outline es-only">Descargar
+                            CV</a>
+                        <a href="Ludeynis_CV_Desarrolladora.pdf" download class="btn btn-outline en-only">Download
+                            CV</a>
                     </div>
 
                 </div>
@@ -51,16 +75,20 @@
             </div>
         </section>
         <section id="experiencia" class="experiencia">
-            <h2 class="section-title">Experiencia laboral</h2>
+            <h2 class="section-title es-only">Experiencia laboral</h2>
+            <h2 class="section-title en-only">Work Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <span class="date">2026 - 2026</span>
-                        <h3>Practicante</h3>
+                        <h3 class="es-only">Practicante</h3>
+                        <h3 class="en-only">Intern</h3>
                         <h4>Veterinary Automation SL</h4>
-                        <p>Participé en el desarrollo de una aplicación web de gestión empresarial. Trabajé
-                            principalmente con JavaScript para manipulación del DOM, manejo de eventos y lógica de
-                            interfaz.
+                        <p class="es-only">Participé en el desarrollo de una aplicación web de gestión empresarial.
+                            Trabajé principalmente con JavaScript para manipulación del DOM, manejo de eventos y lógica
+                            de interfaz.</p>
+                        <p class="en-only">I participated in the development of a business management web application. I
+                            worked mainly with JavaScript for DOM manipulation, event handling, and interface logic.</p>
                         </p>
                         <ul class="skills">
                             <li>JavaScript</li>
@@ -76,10 +104,13 @@
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <span class="date">2025 - 2025</span>
-                        <h3>Practicante</h3>
+                        <h3 class="es-only">Practicante</h3>
+                        <h3 class="en-only">Intern</h3>
                         <h4>Adviser Cloud</h4>
-                        <p>Participe en la mejora de la interfaz y estructura de una página web utilizando WordPress y
-                            el editor visual Elementor.</p>
+                        <p class="es-only">Participe en la mejora de la interfaz y estructura de una página web
+                            utilizando WordPress y el editor visual Elementor.</p>
+                        <p class="en-only">I participated in improving the interface and structure of a website using
+                            WordPress and the Elementor visual editor.</p>
                         <ul class="skills">
                             <li>HTML5</li>
                             <li>CSS3</li>
@@ -93,18 +124,22 @@
 
         </section>
         <section id="proyectos" class="projects">
-            <h2 class="section-title">Proyectos personales</h2>
+            <h2 class="section-title es-only">Proyectos personales</h2>
+            <h2 class="section-title en-only">Personal Projects</h2>
             <div class="projects-container">
 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="imagenes/blackJack.png" alt="proyecto1">
+                        <img src="imagenes/blackJack.png" alt="proyecto blackJack">
                     </div>
                     <div class="project-info">
-                        <h3>Blackjack | JavaScript</h3>
-                        <p>
-                            Implementé la lógica completa del juego: reparto de cartas, cálculo de puntuaciones y turno automático de la banca, organizada en módulos reutilizables con JavaScript y Vite.
-                        </p>
+                        <h3 class="es-only">Blackjack | JavaScript</h3>
+                        <h3 class="en-only">Blackjack | JavaScript</h3>
+                        <p class="es-only">Implementé la lógica completa del juego: reparto de cartas, cálculo de
+                            puntuaciones y turno automático de la banca, organizada en módulos reutilizables con
+                            JavaScript y Vite.</p>
+                        <p class="en-only">I implemented the complete game logic: card dealing, score calculation, and
+                            automatic dealer turn, organized in reusable modules with JavaScript and Vite.</p>
                         <div class="project-tech">
                             <span>JavaScript</span>
                             <span>Vite</span>
@@ -112,10 +147,15 @@
                             <span>CSS3</span>
                         </div>
                         <div class="project-links">
-                            <a href=https://ludeynis-vite-app.netlify.app/ target="_blank"><i
+                            <a class="es-only" href=https://ludeynis-vite-app.netlify.app/ target="_blank"><i
                                     class="fas fa-link"></i>Demo</a>
-                            <a href="https://github.com/Ludeynis/blackjack-vite.git" target="_blank"><i
+                            <a class="en-only" href=https://ludeynis-vite-app.netlify.app/ target="_blank"><i
+                                    class="fas fa-link"></i>Demo</a>
+
+                            <a class="es-only" href="https://github.com/Ludeynis/blackjack-vite.git" target="_blank"><i
                                     class="fab fa-github"></i>Codigo</a>
+                            <a class="en-only" href="https://github.com/Ludeynis/blackjack-vite.git" target="_blank"><i
+                                    class="fab fa-github"></i>Code</a>
                         </div>
                     </div>
                 </div>
@@ -124,41 +164,54 @@
 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="imagenes/todoList.png" alt="proyecto2">
+                        <img src="imagenes/todoList.png" alt="proyecto todoList">
                     </div>
                     <div class="project-info">
-                        <h3>Todo App | JavaScript, HTML5, CSS3, Vite</h3>
-                        <p>
-                            Gestor de tareas con filtrado, persistencia de datos y actualización dinámica del estado, organizado en módulos ES6 para facilitar su mantenimiento.
-                        </p>
+                        <h3 class="es-only">Todo App | JavaScript, HTML5, CSS3, Vite</h3>
+                        <h3 class="en-only">Todo App | JavaScript, HTML5, CSS3, Vite</h3>
+                        <p class="es-only">Gestor de tareas con filtrado, persistencia de datos y actualización dinámica
+                            del estado, organizado en módulos ES6 para facilitar su mantenimiento.</p>
+                        <p class="en-only">Task manager with filtering, data persistence, and dynamic state updates,
+                            organized in ES6 modules for easy maintenance.</p>
                         <div class="project-tech">
                             <span>JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://miapptareasdiarias.netlify.app/" target="_blank"><i
+                            <a class="es-only" href="https://miapptareasdiarias.netlify.app/" target="_blank"><i
                                     class="fas fa-link"></i>Demo</a>
-                            <a href="https://github.com/Ludeynis/todo-app.git" target="_blank"><i
+                            <a class="en-only" href="https://miapptareasdiarias.netlify.app/" target="_blank"><i
+                                    class="fas fa-link"></i>Demo</a>
+
+                            <a class="es-only" href="https://github.com/Ludeynis/todo-app.git" target="_blank"><i
                                     class="fab fa-github"></i>Codigo</a>
+
+                            <a class="en-only" href="https://github.com/Ludeynis/todo-app.git" target="_blank"><i
+                                    class="fab fa-github"></i>Code</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="imagenes/catalogo.png" alt="proyecto2">
+                        <img src="imagenes/catalogo.png" alt="proyecto catalogo">
                     </div>
                     <div class="project-info">
-                        <h3>Catálogo dinámico de productos (PHP y Front-End)</h3>
-                        <p>
-                            Catálogo de productos con Back-End en PHP conectado a base de datos, y presentación Front-End para listar y mostrar el detalle de cada producto.
-                        </p>
+                        <h3 class="es-only">Catálogo dinámico de productos (PHP y Front-End)</h3>
+                        <h3 class="en-only">Dynamic Product Catalog (PHP and Front-End)</h3>
+                        <p class="es-only">Catálogo de productos con Back-End en PHP conectado a base de datos, y
+                            presentación Front-End para listar y mostrar el detalle de cada producto.</p>
+                        <p class="en-only">Product catalog with PHP Back-End connected to database, and Front-End
+                            presentation to list and display product details.</p>
                         <div class="project-tech">
                             <span>PHP</span>
                             <span>HTML5</span>
                             <span>CSS3</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Ludeynis/catalogo-productos-php" target="_blank"><i
-                                    class="fab fa-github"></i>Codigo</a>
+                            <a class="es-only" href="https://github.com/Ludeynis/catalogo-productos-php"
+                                target="_blank"><i class="fab fa-github"></i>Codigo</a>
+
+                            <a class="en-only" href="https://github.com/Ludeynis/catalogo-productos-php"
+                                target="_blank"><i class="fab fa-github"></i>Code</a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +221,8 @@
     </main>
     <footer>
         <div class="footer-content">
-            <p>&copy;2026 Ludeynis Gámez - Todos los derechos reservados</p>
+            <p class="es-only">&copy;2026 Ludeynis Gamez - Todos los derechos reservados</p>
+            <p class="en-only">&copy;2026 Ludeynis Gamez - All rights reserved</p>
             <div class="social-links">
                 <a href="https://github.com/Ludeynis" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.instagram.com/ludeynis1/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -177,6 +231,10 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
 
 </body>
 
